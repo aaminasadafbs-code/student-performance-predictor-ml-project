@@ -1,16 +1,18 @@
-# student-performance-predictor-ml-project
-Machine Learning project to predict student grades using Decision Tree Classifier with Python, Pandas, and Sci-kit-learn. Future updates will include KNN and model comparison.
-# Student Performance Prediction using Decision Tree
+# Student Performance Prediction using Machine Learning
+
+A Machine Learning project that predicts student grades using multiple classification algorithms. This project demonstrates the complete machine learning workflow, including data preprocessing, model training, evaluation, and prediction using Python and Scikit-learn.
+
+---
 
 ## 📌 Project Overview
 
-This project predicts a student's academic grade using the Decision Tree Classification algorithm in Python. It is a simple Machine Learning project built to understand the complete ML workflow, from loading data to making predictions for a new student.
+This project predicts a student's academic grade based on various academic performance indicators. It is designed to understand and compare different Machine Learning algorithms using the same dataset.
 
 ---
 
 ## 🎯 Objective
 
-To predict a student's final grade based on academic performance indicators such as:
+To build and compare Machine Learning models for predicting a student's final grade based on:
 
 - Study Hours
 - Attendance Percentage
@@ -46,47 +48,36 @@ The dataset contains **1,500 student records** with the following features:
 
 ---
 
-## 🤖 Machine Learning Algorithm
+## 🤖 Machine Learning Algorithms
 
-This project uses the **Decision Tree Classifier** from Scikit-learn.
+This project currently includes:
 
-The dataset is divided into:
+- Decision Tree Classifier
+- K-Nearest Neighbors (KNN)
 
-- 80% Training Data
-- 20% Testing Data
-
-using the Hold-Out Method (`train_test_split`).
+Both algorithms are trained and evaluated using the same dataset for performance comparison.
 
 ---
 
 ## 📊 Model Performance
 
-**Accuracy:** **96.33%**
-
-The trained model successfully predicts student grades based on the provided academic details.
-
----
-
-## 🌳 Decision Tree Visualization
-
-The project generates a graphical representation of the Decision Tree and saves it as:
-
-```
-decision_tree.png
-```
+| Algorithm | Accuracy |
+|-----------|----------|
+| Decision Tree | 94.33% |
+| K-Nearest Neighbors (KNN) | 94.33% |
 
 ---
 
 ## 💻 Features
 
-- Loads CSV dataset using Pandas
-- Performs basic data exploration
-- Checks for missing values
-- Displays statistical summary
-- Trains a Decision Tree model
-- Evaluates model accuracy
-- Visualizes the Decision Tree
-- Predicts the grade for a new student using user input
+- Load dataset using Pandas
+- Perform data preprocessing
+- Check for missing values
+- Display dataset statistics
+- Train Machine Learning models
+- Evaluate model accuracy
+- Predict grades for new student data
+- Compare multiple Machine Learning algorithms
 
 ---
 
@@ -120,7 +111,8 @@ Student-Performance-Prediction/
 │   └── student_data.csv
 │
 ├── src/
-│   └── student_prediction_analysis.py
+│   ├── student_prediction_decision_tree.py
+│   └── student_prediction_knn.py
 │
 ├── decision_tree.png
 ├── README.md
@@ -131,10 +123,12 @@ Student-Performance-Prediction/
 
 ## 🚀 Future Improvements
 
-- Implement K-Nearest Neighbors (KNN)
-- Compare multiple Machine Learning algorithms
-- Evaluate Precision, Recall and F1-Score
-- Improve model performance through feature engineering
+- Implement Logistic Regression
+- Implement Random Forest Classifier
+- Implement Naive Bayes Classifier
+- Compare multiple Machine Learning models
+- Evaluate Precision, Recall, and F1-Score
+- Perform Hyperparameter Tuning
 
 ---
 
@@ -142,6 +136,6 @@ Student-Performance-Prediction/
 
 **Aamina Sadaf**
 
-Mathematics With Computer Applications Student
+Bachelor of Science in Mathematics with Computer Applications
 
-Project developed for learning Machine Learning fundamentals and building a practical GitHub portfolio project.
+This project is part of my Machine Learning learning journey and GitHub portfolio, focusing on building practical skills in data analysis and predictive modeling.
